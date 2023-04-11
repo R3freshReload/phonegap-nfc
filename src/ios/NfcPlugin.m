@@ -98,8 +98,7 @@
     NSArray<NSDictionary *> *ndefData = [command argumentAtIndex:0];
 
     // Create the NDEF Message
-    NSMutableArray<NFCNDEFPayload*> *payloads = [NSMutableArray 
-                                                ];
+    NSMutableArray<NFCNDEFPayload*> *payloads = [NSMutableArray new];
                               
     @try {
         for (id recordData in ndefData) {
